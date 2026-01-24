@@ -1,9 +1,9 @@
 :root {
-    --main-color: #07875f;
-    --Secondary-color: #F5F7F6;
-    --section-background: #e4e5e4;
-    --section-padding: 60px;
-    --main-duration: 0.5s;
+  --main-color: #07875f;
+  --Secondary-color: #f5f7f6;
+  --section-background: #e4e5e4;
+  --section-padding: 60px;
+  --main-duration: 0.5s;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -70,9 +70,9 @@ body {
   padding: 20px;
 }
 .header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
 }
 .header .logo {
   width: 200px;
@@ -81,27 +81,6 @@ body {
   position: relative;
 }
 .header .links:hover .icon span:nth-child(2) {
-  width: 100%;
-}
-.header .links .icon {
-  width: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-.header .links .icon span {
-  background-color: #333;
-  margin-bottom: 5px;
-  height: 2px;
-}
-.header .links .icon span:first-child {
-  width: 100%;
-}
-.header .links .icon span:nth-child(2) {
-  width: 60%;
-  transition: var(--main-duration);
-}
-.header .links .icon span:last-child {
   width: 100%;
 }
 .header .links ul {
@@ -134,13 +113,33 @@ body {
   text-decoration: none;
   color: #333;
   transition: var(--main-duration);
-  
 }
 .header .links:hover ul li a:hover {
-padding-left: 25px;
+  padding-left: 25px;
 }
 .header .links ul li a:not(:last-child) a {
   border-bottom: 1px solid #ddd;
+}
+.header .links .icon {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.header .links .icon span {
+  background-color: #333;
+  margin-bottom: 5px;
+  height: 2px;
+}
+.header .links .icon span:first-child {
+  width: 100%;
+}
+.header .links .icon span:nth-child(2) {
+  width: 60%;
+  transition: var(--main-duration);
+}
+.header .links .icon span:last-child {
+  width: 100%;
 }
 /* end Header */
 /* Start Landing Section */
@@ -162,11 +161,11 @@ padding-left: 25px;
 /* end Landing Section */
 /* Start Features */
 .features {
-padding-top: var(--section-padding);
-padding-bottom: var(--section-padding);
-background-color: var(--section-background);
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
 }
-.features .container{
+.features .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
@@ -178,12 +177,10 @@ background-color: var(--section-background);
 .features .feat i {
   font-size: 25px;
   color: var(--main-color);
-  
 }
 .features .feat h3 {
   font-weight: 800;
   margin: 20px 0;
-
 }
 .features .feat p {
   line-height: 1.6;
@@ -203,7 +200,7 @@ background-color: var(--section-background);
   grid-gap: 30px;
   margin-top: 100px;
 }
-.why-glowe .Glowé-content .Why{
+.why-glowe .Glowé-content .Why {
   display: flex;
   margin-bottom: 40px;
 }
@@ -213,12 +210,12 @@ background-color: var(--section-background);
     text-align: center;
   }
 }
-.why-glowe .Glowé-content .Why i{
+.why-glowe .Glowé-content .Why i {
   color: var(--main-color);
   flex-basis: 60px;
 }
 .why-glowe .Glowé-content .Why .text {
- flex: 1;
+  flex: 1;
 }
 .why-glowe .Glowé-content .Why .text h3 {
   margin: 0 0 20px;
@@ -246,7 +243,6 @@ background-color: var(--section-background);
 
 .why-glowe .Glowé-content .image img {
   width: 300px;
-  
 }
 
 @media (max-width: 1199px) {
@@ -255,10 +251,9 @@ background-color: var(--section-background);
   }
 }
 
-  
 /* end Why Glowé   */
 /* start Our Products */
-.our-products{
+.our-products {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
   background-color: var(--section-background);
@@ -283,21 +278,24 @@ background-color: var(--section-background);
 }
 .our-products .our-products-content .card .info p {
   color: #5b5b5b;
-margin-bottom: 0;
-line-height: 1.6;
+  margin-bottom: 0;
+  line-height: 1.6;
 }
 /* end Our Products */
 /* start About Glowé */
 .about {
   padding-top: var(--section-padding);
   padding-bottom: calc(var(--section-padding) + 60px);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7989a17cfaff78be7b32fdb4619568ea46416381
 }
 .about .about-content {
- margin-top: 100px;
- display: flex;
- flex-wrap: wrap;
- justify-content: space-between;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 @media (max-width: 991px) {
   .about .about-content {
@@ -309,7 +307,6 @@ line-height: 1.6;
   position: relative;
   width: 250px;
   height: 375px;
-
 }
 @media (max-width: 991px) {
   .about .about-content .image {
@@ -325,7 +322,6 @@ line-height: 1.6;
   top: -50px;
   left: -20px;
   z-index: -1;
-
 }
 .about .about-content .image::after {
   top: -50px;
@@ -346,25 +342,24 @@ line-height: 1.6;
 }
 .about .about-content .image img {
   max-width: 100%;
-
 }
 .about .about-content .text {
-  flex-basis: calc(100% - 50px);
+  flex-basis: calc(100% - 500px);
 }
-.about .about-content .text p:first-of-type{
+.about .about-content .text p:first-of-type {
   font-weight: bold;
   line-height: 2;
   margin-bottom: 50px;
 }
-.about .about-content .text hr{
+.about .about-content .text hr {
   width: 50%;
   display: inline-block;
   border-color: var(--main-color);
 }
-.about .about-content .text p:last-of-type{
+.about .about-content .text p:last-of-type {
   line-height: 2;
-  color: #5b5b5b
-};
+  color: #5b5b5b;
+}
 
 /* end About Glowé */
 /* Start Contact */
